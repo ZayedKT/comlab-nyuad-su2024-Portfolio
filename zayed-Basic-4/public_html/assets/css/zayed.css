@@ -10822,11 +10822,11 @@ a.text-warning:hover, a.text-warning:focus {
 }
 
 .text-danger {
-  color: #3C6e71 !important;
+  color: #ffffff !important; /*Text (for copyright) color*/
 }
 
 a.text-danger:hover, a.text-danger:focus {
-  color: #353535 !important;
+  color: #ffffff !important;
 }
 
 .text-light {
@@ -11516,7 +11516,7 @@ pre .code {
 }
 
 .footer {
-  background: #17263C;
+  background: #3c6e71; /*Footer Background Color*/
 }
 
 .header {
