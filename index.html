@@ -11,14 +11,14 @@
     <!-- Bootstrap + Zayed main styles -->
 	<link rel="stylesheet" href="assets/css/zayed.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #e6ffff;">
     <!--<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>-->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Zayed</h1>
-                <h6 class="header-mono">Studying Computer Engineering and Interactive Media at NYUAD</h6><!-- Web Design | Hardware Security | Sound and Video Editing </h6>-->
+                <h6 class="header-mono">Currently Studying Computer Engineering and Interactive Media at NYUAD</h6><!-- Web Design | Hardware Security | Sound and Video Editing </h6>-->
                 <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Download CV</button>
             </div>
         </div>
@@ -64,6 +64,9 @@
  <section class="section" id="resume">
     <div class="container">
         <h2 class="mb-5">My <span class="text-danger">Resume</span></h2>
+
+        <!-- Keeps containers within a certain border -->
+        <div class="row">
 
 
 
@@ -180,7 +183,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
 
     </div>
 </section>
@@ -197,8 +200,101 @@
             <div class="blog-card">
                 <!-- Embed Website -->
                 <div class="img-holder">
-                    <iframe src = "https://zayedkt.github.io/comlab-nyuad-su2024-30MFFWebsite/"> </iframe>
-                </div>
+                    <!--Image Carousel-->
+
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext1">1 / 3</div>
+                          <img src="assets/imgs/Project1-1.png" style="width:100%">
+                          <div class="text1">Caption Text</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext1">2 / 3</div>
+                          <img src="assets/imgs/Project1-1.png" style="width:100%">
+                          <div class="text1">Caption Two</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext1">3 / 3</div>
+                          <img src="assets/imgs/Project1-1.png" style="width:100%">
+                          <div class="text1">Caption Three</div>
+                        </div>
+                        
+                        <a class="prev1" onclick="plusSlides(-1)">❮</a>
+                        <a class="next1" onclick="plusSlides(1)">❯</a>
+                        
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot1" onclick="currentSlide(1)"></span> 
+                          <span class="dot1" onclick="currentSlide(2)"></span> 
+                          <span class="dot1" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+                        
+                    <!-- <div class="Image-Carousel slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="assets/imgs/Project1-1.png" style="width:100%">
+                          <div class="text">Caption Text</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="assets/imgs/Project1-2.png" style="width:100%">
+                          <div class="text">Caption Two</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="assets/imgs/Project2-2.png" style="width:100%">
+                          <div class="text">Caption Three</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                    </div>
+                        <br>
+                        
+                 -->
+                    <!-- <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 2</div>
+                          <img src="assets/imgs/Project1-1.png" style="width:100%">
+                          <div class="text">Homepage</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 2</div>
+                          <img src="assets/imgs/Project1-2.png" style="width:100%">
+                          <div class="text">Image Gallery</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="assets/imgs/advertising-1.jpg" style="width:100%">
+                            <div class="text">Caption Three</div>
+                          </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+                        
+                        <br>
+                        
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                        </div>
+                    </div> -->
+
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">30MFF Website</h6>
@@ -290,7 +386,7 @@
             <div class="blog-card">
                 <!-- Embed Website -->
                 <div class="img-holder">
-                    <iframe src = "assets/imgs/Project_5.png"> </iframe>
+                    <img src = "assets/imgs/Project_5.png">
                 </div>
                 <!-- <div class="img-holder">
                     <img src = "assets/imgs/Project_5.png">
@@ -317,7 +413,7 @@
 
 
 
-    <div class="section contact" id="contact">
+    <div class="section" id="contact"> <!--     <div class="section contact" id="contact">  <--Was this before  -->
         <div id="map" class="map"></div>
         <div class="container">
             <h2 class="mb-5">Contacts</h2>
@@ -357,7 +453,8 @@
                                 <i class="ti-github icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">GitHub :<br> <span class="text-muted">ZayedKT</span></h6>
+                                <!-- Redirects the User to the GitHub's Page in a new tab-->
+                                <h6 class="d-inline">GitHub :<br><a href="https://github.com/ZayedKT" target="_blank"> <span class="text-muted">ZayedKT</span></a></h6>
                             </div>
                         </div>
                         <div class="row mb-2">
