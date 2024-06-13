@@ -273,6 +273,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  appearance: button; /*Debugging Issue*/
   -webkit-appearance: button;
 }
 
@@ -301,6 +302,7 @@ input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
+  appearance: listbox; /*Debugging Issue*/
   -webkit-appearance: listbox;
 }
 
@@ -339,6 +341,7 @@ progress {
 
 [type="search"] {
   outline-offset: -2px;
+  appearance: none; /*Debugging Issue*/
   -webkit-appearance: none;
 }
 
