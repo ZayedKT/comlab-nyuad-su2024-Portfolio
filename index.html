@@ -9,20 +9,22 @@
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Zayed main styles -->
-	<link rel="stylesheet" href="assets/css/zayed.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" style="background-color: #e9f8f8;">
-    <!--<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>-->
+    <!--Header | Landing Page/Section -->
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Zayed</h1>
-                <h6 class="header-mono">Currently Studying Computer Engineering and Interactive Media at NYUAD</h6><!-- Web Design | Hardware Security | Sound and Video Editing </h6>-->
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Download CV</button>
+                <h6 class="header-mono">Currently Studying Computer Engineering and Interactive Media at NYUAD</h6>
+                <!-- Button to directly move to the Portfolio -->
+                <a href="#portfolio" class="nav-link"><button class="btn btn-primary btn-rounded"><i class="ti-angle-double-right pr-2"></i>View Portfolio</button></a> 
             </div>
         </div>
     </header>
+    <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,8 +70,6 @@
         <!-- Keeps containers within a certain border -->
         <div class="row">
 
-
-
             <!-- Education Section-->
             <div class="blog-card">
 
@@ -106,85 +106,81 @@
                     <!-- Display Section Header -->
                     <h3 class="font-weight-normal">Area of Expertise</h3>
                     
+                    <!-- Display a short line, div is used to reduce line/height spacing -->
+                    <div style="min-height: 35px;">
+                        <span class="line mb-5"></span>
+                    </div>
 
-                        <!-- Display a short line, div is used to reduce line/height spacing -->
-                        <div style="min-height: 35px;">
-                            <span class="line mb-5"></span>
-                        </div>
-
-                        
-                    
-                    <!-- Used to arrange the subsections as columns to use white/empty space-->
+                    <!-- Used to arrange the subsections as columns to reduce white/empty space-->
                     <div class="container" style="margin-right: 500px;  left: none; right: none; padding: 0px;" >
-                    <div class="row">
+                        <div class="row">
 
-                        <div class="col-md-3 col-sm-6">
-                            <!-- Display Subsection Header -->
-                            <h6 class="title text-danger">Interests</h6>
-                            <!-- Display Content as a list -->
-                            <h6>
-                                <ul class="info list-item">
-                                    <li><span>Hardware Security</span></li>
-                                    <li><span>Software Development</span></li>
-                                    <li><span>Web Design</span></li>
-                                </ul>
-                            </h6>
+                            <div class="col-md-3 col-sm-6">
+                                <!-- Display Subsection Header -->
+                                <h6 class="title text-danger">Interests</h6>
+                                <!-- Display Content as a list -->
+                                <h6>
+                                    <ul class="info list-item">
+                                        <li><span>Hardware Security</span></li>
+                                        <li><span>Software Development</span></li>
+                                        <li><span>Web Design</span></li>
+                                    </ul>
+                                </h6>
+                            </div>
+
+                            <div class="col-md-3 col-sm-6">
+                                <!-- Display Subsection Header -->
+                                <h6 class="title text-danger">Technical Skills</h6>
+                                <!-- Display Content as a list -->
+                                <h6>
+                                    <ul class="info list-item">
+                                        <li><span>C++</span> (Expert)</li>
+                                        <li><span>3D Modelling</span> (Proficiency)</li>
+                                        <li><span>VHDL</span> (Proficiency)</li>
+                                        <li><span>MatLab</span> (Intermediate)</li>
+                                        <li><span>JavaScript</span> (Intermediate)</li>
+                                        <li><span>CSS</span> (Intermediate)</li>
+                                        <li><span>PHP</span> (Intermediate)</li>
+                                    </ul>
+                                </h6>
                             </div>
 
 
-                        <div class="col-md-3 col-sm-6">
-                        <!-- Display Subsection Header -->
-                        <h6 class="title text-danger">Technical Skills</h6>
-                        <!-- Display Content as a list -->
-                        <h6>
-                            <ul class="info list-item">
-                                <li><span>C++</span> (Expert)</li>
-                                <li><span>3D Modelling</span> (Proficiency)</li>
-                                <li><span>VHDL</span> (Proficiency)</li>
-                                <li><span>MatLab</span> (Intermediate)</li>
-                                <li><span>JavaScript</span> (Intermediate)</li>
-                                <li><span>CSS</span> (Intermediate)</li>
-                                <li><span>PHP</span> (Intermediate)</li>
-                            </ul>
-                        </h6>
-                        </div>
-                    
-                    
-                        <div class="col-md-3 col-sm-6">
-                            <!-- Display Subsection Header -->
-                            <h6 class="title text-danger">Soft Skills</h6>
-                            <!-- Display Content as a list -->
-                            <h6>
-                                <ul class="info list-item"> 
-                                    <li><span>Problem-Solving</span></li>
-                                    <li><span>Listening</span></li>
-                                    <li><span>Communication</span></li>
-                                    <li><span>Teamwork</span></li>
-                                    <li><span>Project Management</span></li>
-                                    <li><span>Research</span></li>
-                                </ul>
-                            </h6>
-                        </div>
+                            <div class="col-md-3 col-sm-6">
+                                <!-- Display Subsection Header -->
+                                <h6 class="title text-danger">Soft Skills</h6>
+                                <!-- Display Content as a list -->
+                                <h6>
+                                    <ul class="info list-item"> 
+                                        <li><span>Problem-Solving</span></li>
+                                        <li><span>Listening</span></li>
+                                        <li><span>Communication</span></li>
+                                        <li><span>Teamwork</span></li>
+                                        <li><span>Project Management</span></li>
+                                        <li><span>Research</span></li>
+                                    </ul>
+                                </h6>
+                            </div>
 
 
-                        <div class="col-md-3 col-sm-6">
-                            <!-- Display Subsection Header -->
-                            <h6 class="title text-danger">Language</h6>
-                            <!-- Display Content as a list -->
-                            <h6>
-                                <ul class="info list-item">
-                                    <li><span>Arabic</span> (Native)</li>
-                                    <li><span>English</span> (Fluent)</li>
-                                    <li><span>French</span> (Beginner)</li>
-                                </ul>
-                            </h6>
-                        </div>
+                            <div class="col-md-3 col-sm-6">
+                                <!-- Display Subsection Header -->
+                                <h6 class="title text-danger">Language</h6>
+                                <!-- Display Content as a list -->
+                                <h6>
+                                    <ul class="info list-item">
+                                        <li><span>Arabic</span> (Native)</li>
+                                        <li><span>English</span> (Fluent)</li>
+                                        <li><span>French</span> (Beginner)</li>
+                                    </ul>
+                                </h6>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -198,103 +194,13 @@
 
             <!-- First Project (Assignment 1) Section-->
             <div class="blog-card">
-                <!-- Embed Website -->
+
+                <!-- Image of Project -->
                 <div class="img-holder">
-                    <!--Image Carousel-->
+                    <img src = "assets/imgs/Project1-1.png"> 
+                </div>
 
-
-                    <div class="slideshow-container">
-
-                        <div class="mySlides fade">
-                          <div class="numbertext1">1 / 3</div>
-                          <img src="assets/imgs/Project1-1.png" style="width:100%">
-                          <div class="text1">Caption Text</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext1">2 / 3</div>
-                          <img src="assets/imgs/Project1-1.png" style="width:100%">
-                          <div class="text1">Caption Two</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext1">3 / 3</div>
-                          <img src="assets/imgs/Project1-1.png" style="width:100%">
-                          <div class="text1">Caption Three</div>
-                        </div>
-                        
-                        <a class="prev1" onclick="plusSlides(-1)">❮</a>
-                        <a class="next1" onclick="plusSlides(1)">❯</a>
-                        
-                        </div>
-                        <br>
-                        
-                        <div style="text-align:center">
-                          <span class="dot1" onclick="currentSlide(1)"></span> 
-                          <span class="dot1" onclick="currentSlide(2)"></span> 
-                          <span class="dot1" onclick="currentSlide(3)"></span> 
-                        </div>
-                    </div>
-                        
-                    <!-- <div class="Image-Carousel slideshow-container">
-
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 3</div>
-                          <img src="assets/imgs/Project1-1.png" style="width:100%">
-                          <div class="text">Caption Text</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 3</div>
-                          <img src="assets/imgs/Project1-2.png" style="width:100%">
-                          <div class="text">Caption Two</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext">3 / 3</div>
-                          <img src="assets/imgs/Project2-2.png" style="width:100%">
-                          <div class="text">Caption Three</div>
-                        </div>
-                        
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-                        
-                    </div>
-                        <br>
-                        
-                 -->
-                    <!-- <div class="slideshow-container">
-
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 2</div>
-                          <img src="assets/imgs/Project1-1.png" style="width:100%">
-                          <div class="text">Homepage</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <div class="numbertext">2 / 2</div>
-                          <img src="assets/imgs/Project1-2.png" style="width:100%">
-                          <div class="text">Image Gallery</div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                            <div class="numbertext">3 / 3</div>
-                            <img src="assets/imgs/advertising-1.jpg" style="width:100%">
-                            <div class="text">Caption Three</div>
-                          </div>
-
-                        <a class="prev" onclick="plusSlides(-1)">❮</a>
-                        <a class="next" onclick="plusSlides(1)">❯</a>
-                        
-                        
-                        <br>
-                        
-                        <div style="text-align:center">
-                          <span class="dot" onclick="currentSlide(1)"></span> 
-                          <span class="dot" onclick="currentSlide(2)"></span> 
-                        </div>
-                    </div> -->
-
+                <!-- Content of the Project -->
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">30MFF Website</h6>
@@ -315,10 +221,13 @@
 
             <!-- Second Project (Assignment 2) Section-->
             <div class="blog-card">
-                <!-- Embed Website -->
+
+                <!-- Image of Project -->
                 <div class="img-holder">
-                    <iframe id="MuteVideo" src = "https://itsrekas.github.io/Assignment-2/"> </iframe>
+                    <img src = "assets/imgs/Project2-1.png"> 
                 </div>
+
+                <!-- Content of the Project -->
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">Interactive Comic</h6>
@@ -338,10 +247,13 @@
 
             <!-- Third Project (Assignment 3) Section-->
             <div class="blog-card">
-                <!-- Embed Website -->
+                
+                <!-- Image of Project -->
                 <div class="img-holder">
-                    <iframe src = "https://ns5376.github.io/Police-Chase-Chronicles/"> </iframe>
+                    <img src = "assets/imgs/Project3-1.png"> 
                 </div>
+
+                <!-- Content of the Project -->
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">Sound Project</h6>
@@ -361,10 +273,13 @@
 
             <!-- Fourth Project (Assignment 4) Section-->
             <div class="blog-card">
-                <!-- Embed Website -->
+
+                <!-- Image of Project -->
                 <div class="img-holder">
-                    <iframe src = "https://itsrekas.github.io/Assignment-3/"> </iframe>
+                    <img src = "assets/imgs/Project4-1.png"> 
                 </div>
+
+                <!-- Content of the Project -->
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">Behind The Scenes</h6>
@@ -384,13 +299,13 @@
 
             <!-- Fifth Project (D&I Smart Water Bottle Holder Project) Section-->
             <div class="blog-card">
-                <!-- Embed Website -->
+
+                <!-- Image of Project -->
                 <div class="img-holder">
-                    <img src = "assets/imgs/Project_5.png">
+                    <img src = "assets/imgs/Project5.png"> 
                 </div>
-                <!-- <div class="img-holder">
-                    <img src = "assets/imgs/Project_5.png">
-                </div> -->
+
+                <!-- Content of the Project -->
                 <div class="content-holder">
                     <!-- Display Section Header -->
                     <h6 class="title">Smart Water Bottle Holder</h6>
@@ -405,15 +320,14 @@
                     <a class="read-more text-danger">Documents Available Upon Request</a>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 
 
-
-    <div class="section" id="contact"> <!--     <div class="section contact" id="contact">  <--Was this before  -->
+    <!--Contacts Section -->
+    <div class="section" id="contact"> 
         <div id="map" class="map"></div>
         <div class="container">
             <h2 class="mb-5">Contacts</h2>
@@ -421,8 +335,11 @@
                 <div class="col-lg-8">
                     <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
-                        <!-- Sends the user's response to a platform, formsubmit, which sends it as an email to myself-->
-                        <form action="https://formsubmit.co/zka224@nyu.edu" method="POST">
+
+                        <!-- Sends the user's response to a platform, formsubmit, which sends it as an email to me-->
+                        <form action="60ac6afbfed4f78d8c1832a9329302bd" method="POST">
+
+                            <!-- User's input -->
                             <div class="form-group">
                                 <input  class="form-control" type="text" placeholder="Name *" required>
                             </div>
@@ -438,6 +355,8 @@
                         </form>
                     </div>
                 </div>
+                
+                <!-- Further Details/Contact Information -->
                 <div class="col-lg-4">
                     <div class="contact-info-card">
                         <h4 class="contact-title">Get in touch</h4>
@@ -470,9 +389,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <!-- Footer Page with the Copyright notice -->
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-danger-footer">
@@ -495,7 +415,7 @@
     <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>-->
 
     <!-- Zayed js -->
-    <script src="assets/js/zayed.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
