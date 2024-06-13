@@ -2789,7 +2789,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(60, 110, 113, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -11299,7 +11299,7 @@ p {
 
 .blog-card .img-holder img {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
      aspect-ratio: 16/9; /*Extra*/
